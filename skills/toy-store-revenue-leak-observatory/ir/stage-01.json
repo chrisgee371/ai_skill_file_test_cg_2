@@ -1,0 +1,32 @@
+{
+  "id": "stage-01",
+  "name": "source_intake_and_profiling",
+  "objective": "Create source-entry models that map exactly to the supplied CSV files and confirm schema facts from on-disk profiles.",
+  "read_first": [
+    "datasets/maven-fuzzy-factory/profiles/table-profiles.json",
+    "datasets/maven-fuzzy-factory/profiles/key-integrity.json",
+    "skills/toy-store-revenue-leak-observatory/contracts/source-manifest.json"
+  ],
+  "allowed_inputs": [
+    "datasets/maven-fuzzy-factory/raw/maven_fuzzy_factory_data_dictionary.csv",
+    "datasets/maven-fuzzy-factory/raw/order_item_refunds.csv",
+    "datasets/maven-fuzzy-factory/raw/order_items.csv",
+    "datasets/maven-fuzzy-factory/raw/orders.csv",
+    "datasets/maven-fuzzy-factory/raw/products.csv",
+    "datasets/maven-fuzzy-factory/raw/website_pageviews.csv",
+    "datasets/maven-fuzzy-factory/raw/website_sessions.csv"
+  ],
+  "required_outputs": [
+    "src__website_sessions",
+    "src__website_pageviews",
+    "src__orders",
+    "src__order_items",
+    "src__order_item_refunds",
+    "src__products"
+  ],
+  "forbidden_patterns": [
+    "Do not invent columns or tables.",
+    "Do not apply business logic beyond safe typing and renaming.",
+    "Do not skip row-count and key checks."
+  ]
+}

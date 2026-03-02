@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "project_name": "toy-store-revenue-leak-observatory",
+  "bundle_version": "1.0.0",
+  "generated_for": "Prophecy AI / DuckDB",
+  "transport_format": "zip",
+  "runtime_expectation": "Extract this archive at repo root so that skills/toy-store-revenue-leak-observatory and datasets/maven-fuzzy-factory exist as normal directories on disk.",
+  "installed_skill_path": "skills/toy-store-revenue-leak-observatory",
+  "repo_relative_dataset_root": "datasets/maven-fuzzy-factory",
+  "entrypoint_files": [
+    "skills/toy-store-revenue-leak-observatory/SKILL.md",
+    "skills/toy-store-revenue-leak-observatory/README.md",
+    "skills/toy-store-revenue-leak-observatory/phase-plan.json"
+  ],
+  "dataset_summary_path": "datasets/maven-fuzzy-factory/manifests/dataset-summary.json",
+  "phase_plan_path": ".claude/skills/toy-store-revenue-leak-observatory/phase-plan.json",
+  "contract_files": [
+    "skills/toy-store-revenue-leak-observatory/contracts/source-manifest.json",
+    "skills/toy-store-revenue-leak-observatory/contracts/model-registry.json",
+    "skills/toy-store-revenue-leak-observatory/contracts/metric-catalog.json",
+    "skills/toy-store-revenue-leak-observatory/contracts/join-contracts.json",
+    "skills/toy-store-revenue-leak-observatory/contracts/acceptance-tests.json"
+  ],
+  "stage_files": [
+    "skills/toy-store-revenue-leak-observatory/ir/stage-01.json",
+    "skills/toy-store-revenue-leak-observatory/ir/stage-02.json",
+    "skills/toy-store-revenue-leak-observatory/ir/stage-03.json",
+    "skills/toy-store-revenue-leak-observatory/ir/stage-04.json",
+    "skills/toy-store-revenue-leak-observatory/ir/stage-05.json"
+  ],
+  "notes": [
+    "The raw CSV data is included uncompressed inside the archive. There is no nested compression inside the bundle.",
+    "The bundle intentionally improves on the supplied sample skill by using repo-root extractable paths, machine-readable contracts, and a DuckDB-native IR."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "project_name": "toy-store-revenue-leak-observatory",
+  "bundle_version": "1.0.0",
+  "generated_for": "Prophecy AI / Databricks",
+  "transport_format": "zip",
+  "runtime_expectation": "Extract this archive at repo root so that skills/toy-store-revenue-leak-observatory exists as a normal directory on disk, and make the required source and support tables available in Databricks under chris_demos.demos.",
+  "installed_skill_path": "skills/toy-store-revenue-leak-observatory",
+  "repo_relative_dataset_root": "chris_demos.demos",
+  "entrypoint_files": [
+    "skills/toy-store-revenue-leak-observatory/SKILL.md",
+    "skills/toy-store-revenue-leak-observatory/README.md",
+    "chris_demos.demos.phase_plan"
+  ],
+  "dataset_summary_path": "chris_demos.demos.dataset_summary",
+  "phase_plan_path": "chris_demos.demos.phase_plan",
+  "contract_files": [
+    "chris_demos.demos.source_manifest",
+    "chris_demos.demos.model_registry",
+    "chris_demos.demos.metric_catalog",
+    "chris_demos.demos.join_contracts",
+    "chris_demos.demos.acceptance_tests"
+  ],
+  "stage_files": [
+    "chris_demos.demos.stage_01",
+    "chris_demos.demos.stage_02",
+    "chris_demos.demos.stage_03",
+    "chris_demos.demos.stage_04",
+    "chris_demos.demos.stage_05"
+  ],
+  "notes": [
+    "This skill bundle assumes the Maven Fuzzy Factory source tables and support tables are available in Databricks under chris_demos.demos.",
+    "The bundle intentionally improves on the supplied sample skill by using repo-root extractable paths, machine-readable support tables, and a Databricks-native IR."
+  ]
+}
